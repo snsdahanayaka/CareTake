@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medcarr - Healthcare Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm ">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+  <img src="images/logo.png" alt="Medcarr Logo" class="logo-img">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Platform Overview</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Professional Hub</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Plans & Pricing</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Organizations</a></li>
+      </ul>
+      <div class="d-flex gap-2">
+        <a href="#" class="btn btn-outline-primary">Login</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center text-white">
+  <div class="overlay"></div>
+  <div class="container text-right hero-content">
+    <h1 class="display-4 fw-bold">Find Trusted Healthcare <br>
+      <span>Professionals, Anytime.</h1>
+    <p class="lead">Book verified carers, nurses, and more – fast, secure, and stress-free.</p>
+    <div class="d-flex justify-content-right gap-3 mt-4 flex-wrap">
+      <a href="#" class="btn btn-primary btn-lg">Find a Professional</a>
+      <a href="#" class="btn btn-outline-light btn-lg">Join as a Professional</a>
+    </div>
+  </div>
+</section>
+
+<!-- Specialists Section -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold">Top-Rated Healthcare Specialists Near You</h2>
+    <p class="text-muted">Browse verified doctors, nurses, and caregivers available for booking.</p>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="form-group">
+      <select class="form-select">
+        <option selected>All Specialties</option>
+        <option value="nurse">Nurse</option>
+        <option value="carer">Carer</option>
+        <option value="therapist">Therapist</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter Post Code">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary">Search</button>
+    </div>
+  </div>
+
+
+  <!-- Cards Section -->
+<div class="container mt-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card text-center specialist-card h-100">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="card-img-top mx-auto specialist-img" alt="Specialist 1">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-primary">Andy Smith</h5>
+          <p class="text-muted mb-1">ROLE: <strong>SENIOR CARER</strong></p>
+          <p class="card-text small text-muted">Compassionate and experienced carer available for full-time care.</p>
+          <div class="d-flex justify-content-between align-items-center mt-auto gap-3 card-footer-actions">
+            <button class="btn btn-dark hire-btn">Hire</button>
+            <div class="rating-box text-end">
+              <div class="rating text-warning fw-bold">★★★★☆</div>
+              <div class="rating-value text-muted small">4.5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card text-center specialist-card h-100">
+        <img src="https://randomuser.me/api/portraits/women/22.jpg" class="card-img-top mx-auto specialist-img" alt="Specialist 2">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-primary">Jane Doe</h5>
+          <p class="text-muted mb-1">ROLE: <strong>REGISTERED NURSE</strong></p>
+          <p class="card-text small text-muted">Experienced nurse with hospital and community background.</p>
+          <div class="d-flex justify-content-between align-items-center mt-auto gap-3 card-footer-actions">
+            <button class="btn btn-dark hire-btn">Hire</button>
+            <div class="rating-box text-end">
+              <div class="rating text-warning fw-bold">★★★★★</div>
+              <div class="rating-value text-muted small">5.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card text-center specialist-card h-100">
+        <img src="https://randomuser.me/api/portraits/men/33.jpg" class="card-img-top mx-auto specialist-img" alt="Specialist 3">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-primary">John Smith</h5>
+          <p class="text-muted mb-1">ROLE: <strong>PHYSIOTHERAPIST</strong></p>
+          <p class="card-text small text-muted">Rehabilitation and wellness-focused therapist with 10 years of experience.</p>
+          <div class="d-flex justify-content-between align-items-center mt-auto gap-3 card-footer-actions">
+            <button class="btn btn-dark hire-btn">Hire</button>
+            <div class="rating-box text-end">
+              <div class="rating text-warning fw-bold">★★★★☆</div>
+              <div class="rating-value text-muted small">4.4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card text-center specialist-card h-100">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" class="card-img-top mx-auto specialist-img" alt="Specialist 4">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-primary">Mark Lee</h5>
+          <p class="text-muted mb-1">ROLE: <strong>LIVE-IN CARER</strong></p>
+          <p class="card-text small text-muted">Caring and dedicated live-in support with a gentle touch and patience.</p>
+          <div class="d-flex justify-content-between align-items-center mt-auto gap-3 card-footer-actions">
+            <button class="btn btn-dark hire-btn">Hire</button>
+            <div class="rating-box text-end">
+              <div class="rating text-warning fw-bold">★★★☆☆</div>
+              <div class="rating-value text-muted small">3.9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col">
+      <div class="card text-center specialist-card h-100">
+        <img src="https://randomuser.me/api/portraits/women/66.jpg" class="card-img-top mx-auto specialist-img" alt="Specialist 5">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-primary">Emily Clark</h5>
+          <p class="text-muted mb-1">ROLE: <strong>COMMUNITY NURSE</strong></p>
+          <p class="card-text small text-muted">Certified community nurse offering personalized at-home care.</p>
+          <div class="d-flex justify-content-between align-items-center mt-auto gap-3 card-footer-actions">
+            <button class="btn btn-dark hire-btn">Hire</button>
+            <div class="rating-box text-end">
+              <div class="rating text-warning fw-bold">★★★★★</div>
+              <div class="rating-value text-muted small">5.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col">
+      <div class="card text-center specialist-card h-100">
+        <img src="https://randomuser.me/api/portraits/men/88.jpg" class="card-img-top mx-auto specialist-img" alt="Specialist 6">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-primary">David Green</h5>
+          <p class="text-muted mb-1">ROLE: <strong>ELDERLY CARE</strong></p>
+          <p class="card-text small text-muted">10+ years of experience providing daily living support to seniors.</p>
+          <div class="d-flex justify-content-between align-items-center mt-auto gap-3 card-footer-actions">
+            <button class="btn btn-dark hire-btn">Hire</button>
+            <div class="rating-box text-end">
+              <div class="rating text-warning fw-bold">★★★★☆</div>
+              <div class="rating-value text-muted small">4.7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- See All Link -->
+<div class="text-center mt-4">
+  <a href="#" class="see-all-link">See All</a>
+</div>
+
+
+
+<!-- How Medcarr Works Section -->
+<section class="how-it-works-section py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">How Medcarr Works</h2>
+    <p class="text-muted mb-5">Our platform makes it easy to connect with healthcare professionals for the care you<br>
+     <span>need, when and where you need it.</p></span>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Step 1 -->
+      <div class="col">
+        <div class="work-step p-4 h-100 d-flex flex-column align-items-center text-center">
+          <img src="images/search-icon.png" alt="Search" class="mb-3 work-icon">
+          <h5 class="fw-bold mb-2">Search & Filter</h5>
+          <p class="text-muted small">Find the perfect healthcare professional<br>
+                   <span>based on specialty, location, availability, and </span> <br> more.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col">
+        <div class="work-step p-4 h-100 d-flex flex-column align-items-center text-center">
+          <img src="images/profile-icon.png" alt="Profile" class="mb-3 work-icon">
+          <h5 class="fw-bold mb-2">Book & Schedule</h5>
+          <p class="text-muted small">Schedule appointments for in-home care,<br>
+          <span>clinic visits, or virtual consultations with</span><br>
+          <span>ease.</span></p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col">
+        <div class="work-step p-4 h-100 d-flex flex-column align-items-center text-center">
+          <img src="images/book-icon.png" alt="Book" class="mb-3 work-icon">
+          <h5 class="fw-bold mb-2">Pay Securely</h5>
+          <p class="text-muted small">All payments are processed securely through<br>
+          <span>our platform with funds held in escrow until</span><br>
+          <span>service completion.</p></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="organizations" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mb-3">Hire Healthcare Talent, Seamlessly</h2>
+      <p class="text-muted lead">Streamline your healthcare staffing with our comprehensive platform designed for organizations.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Basic Plan -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 rounded-4 shadow-sm">
+          <div class="text-center mb-4">
+            <h3 class="h5 fw-bold">Basic</h3>
+            <p class="display-6 fw-bold text-dark">£50<span class="fs-6 text-muted">/month</span></p>
+            <p class="text-muted">For small practices and clinics</p>
+          </div>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Up to 5 staff accounts</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Basic booking management</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Standard support</li>
+            <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i>Priority matching</li>
+            <li class="text-muted"><i class="bi bi-x-circle me-2"></i>Analytics dashboard</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary w-100">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Premium Plan -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 rounded-4 shadow-sm position-relative border border-primary">
+          <span class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 rounded-bottom-start small fw-medium">Popular</span>
+          <div class="text-center mb-4">
+            <h3 class="h5 fw-bold">Premium</h3>
+            <p class="display-6 fw-bold text-dark">£120<span class="fs-6 text-muted">/month</span></p>
+            <p class="text-muted">For medium-sized organizations</p>
+          </div>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Up to 15 staff accounts</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Advanced booking management</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Priority support</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Priority matching</li>
+            <li class="text-muted"><i class="bi bi-x-circle me-2"></i>Analytics dashboard</li>
+          </ul>
+          <a href="#" class="btn btn-primary w-100">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 rounded-4 shadow-sm">
+          <div class="text-center mb-4">
+            <h3 class="h5 fw-bold">Enterprise</h3>
+            <p class="display-6 fw-bold text-dark">£250<span class="fs-6 text-muted">/month</span></p>
+            <p class="text-muted">For hospitals and large networks</p>
+          </div>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Unlimited staff accounts</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Complete booking management</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>24/7 dedicated support</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Priority matching</li>
+            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Advanced analytics dashboard</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary w-100">Contact Sales</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4">For Healthcare Professionals</h2>
+        <p class="text-muted">Join our platform to connect with clients, manage your schedule, and grow your practice – all with no upfront costs.</p>
+
+        <ul class="list-unstyled mt-4 mb-4">
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-cash-coin text-primary fs-4 me-3"></i>
+            <span><strong>No Subscription Fee</strong><br><small>Only pay a 15% commission on completed transactions</small></span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-gift text-primary fs-4 me-3"></i>
+            <span><strong>Free for 3 Months</strong><br><small>No commission charged for the first 3 months</small></span>
+          </li>
+          <li class="mb-3 d-flex align-items-start">
+            <i class="bi bi-patch-check-fill text-primary fs-4 me-3"></i>
+            <span><strong>Verified Professional Status</strong><br><small>Stand out with our verification badge that builds client trust</small></span>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-dark px-4 py-2">Join as a Professional</a>
+      </div>
+
+      
+      <div class="col-lg-6 text-center">
+        <img src="images/doctor-waving.jpg" alt="Doctor waving on video call" class="img-fluid rounded-4 shadow-sm">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="healthcare-categories py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Healthcare Categories</h2>
+    <p class="text-muted mb-5">Browse professionals across a wide range of healthcare specialties</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Category Cards -->
+      <div class="col-6 col-sm-4 col-md-3">
+  <div class="category-card d-flex flex-column justify-content-between h-100">
+    <div class="text-center py-4">
+      
+        <img src="icons/nurse.png" alt="Nursing" class="category-icon">
+     
+    </div>
+    <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+      <span class="category-label">Nursing</span>
+      <i class="bi bi-arrow-right"></i>
+    </div>
+  </div>
+</div>
+
+
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="category-card d-flex flex-column justify-content-between h-100">
+          <div class="text-center py-4">
+            <img src="icons/physio.png" alt="Physiotherapy" class="category-icon mb-3">
+          </div>
+          <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+            <span class="category-label">Physiotherapy</span>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="category-card d-flex flex-column justify-content-between h-100">
+          <div class="text-center py-4">
+            <img src="icons/brain.png" alt="Mental Health" class="category-icon mb-3">
+          </div>
+          <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+            <span class="category-label">Mental Health</span>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="category-card d-flex flex-column justify-content-between h-100">
+          <div class="text-center py-4">
+            <img src="icons/elderly.png" alt="Elderly Care" class="category-icon mb-3">
+          </div>
+          <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+            <span class="category-label">Elderly Care</span>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="category-card d-flex flex-column justify-content-between h-100">
+          <div class="text-center py-4">
+            <img src="icons/pediatric.png" alt="Pediatric Care" class="category-icon mb-3">
+          </div>
+          <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+            <span class="category-label">Pediatric Care</span>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="category-card d-flex flex-column justify-content-between h-100">
+          <div class="text-center py-4">
+            <img src="icons/dental.png" alt="Dental Care" class="category-icon mb-3">
+          </div>
+          <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+            <span class="category-label">Dental Care</span>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="category-card d-flex flex-column justify-content-between h-100">
+          <div class="text-center py-4">
+            <img src="icons/vision.png" alt="Vision Care" class="category-icon mb-3">
+          </div>
+          <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+            <span class="category-label">Vision Care</span>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="category-card d-flex flex-column justify-content-between h-100">
+          <div class="text-center py-4">
+            <img src="icons/more.png" alt="More Categories" class="category-icon mb-3">
+          </div>
+          <div class="category-footer d-flex justify-content-between align-items-center px-3 py-2">
+            <span class="category-label">More Categories</span>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- What Our Users Say -->
+<section class="py-5 testimonials-section">
+  <div class="container text-center mb-5">
+    <h2 class="fw-bold">What Our Users Say</h2>
+    <p class="text-muted">Hear from healthcare professionals and clients who use Medcarr every day.</p>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- 1 -->
+      <div class="col">
+        <div class="card h-100 testimonial-card p-4 shadow-sm border-0">
+          <div class="text-warning fs-5 mb-2">★★★★★</div>
+          <p class="text-muted small">"Medcarr has transformed my nursing career. I can now work on my own schedule and connect with patients who truly need my expertise. The platform is intuitive and the payment system is reliable."</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Richardson" class="testimonial-img rounded-circle me-3">
+            <div>
+              <h6 class="mb-0 fw-semibold">Emily Richardson</h6>
+              <small class="text-muted">Registered Nurse, London</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col">
+        <div class="card h-100 testimonial-card p-4 shadow-sm border-0">
+          <div class="text-warning fs-5 mb-2">★★★★★</div>
+          <p class="text-muted small">"As a care home manager, finding qualified staff quickly used to be a nightmare. With Medcarr's Premium plan, we can now fill shifts in minutes rather than days."</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="James Wilson" class="testimonial-img rounded-circle me-3">
+            <div>
+              <h6 class="mb-0 fw-semibold">James Wilson</h6>
+              <small class="text-muted">Care Home Manager, Manchester</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col">
+        <div class="card h-100 testimonial-card p-4 shadow-sm border-0">
+          <div class="text-warning fs-5 mb-2">★★★★☆</div>
+          <p class="text-muted small">"When my mother needed home care after surgery, Medcarr made it incredibly easy to find a qualified carer. The video consultation helped us make an informed choice."</p>
+          <div class="d-flex align-items-center mt-4">
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Sarah Ahmed" class="testimonial-img rounded-circle me-3">
+            <div>
+              <h6 class="mb-0 fw-semibold">Sarah Ahmed</h6>
+              <small class="text-muted">Client, Birmingham</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ready to transform Section -->
+<section class="py-5 text-center text-white bg-dark">
+  <div class="container">
+    <h4 class="fw-bold mb-3">Ready to Transform Healthcare Connections?</h4>
+    <p class="mb-4">Join thousands of healthcare professionals and organizations already using Medcarr</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="#" class="btn btn-light px-4 py-2">Find a Professional</a>
+      <a href="#" class="btn btn-outline-light px-4 py-2">Join as a Professional</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light pt-5 pb-3">
+  <div class="container">
+    <div class="row gy-4">
+
+    
+      <div class="col-md-3">
+        <img src="images/logo.png" alt="Medcarr" height="40" class="mb-2">
+        <p class="text-muted small">Connecting healthcare professionals with those who need them most.</p>
+        <p class="text-muted small mb-1">Terms and Conditions</p>
+        <p class="text-muted small">Privacy Policy</p>
+      </div>
+
+     
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">For Professionals</h6>
+        <ul class="list-unstyled text-muted small">
+          <li>How It Works</li>
+          <li>Sign Up</li>
+          <li>Verification Process</li>
+          <li>Commission Structure</li>
+          <li>Success Stories</li>
+        </ul>
+      </div>
+
+ 
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">For Organizations</h6>
+        <ul class="list-unstyled text-muted small">
+          <li>Subscription Plans</li>
+          <li>Enterprise Solution</li>
+          <li>Case Studies</li>
+          <li>Request Demo</li>
+          <li>Contact Sales</li>
+        </ul>
+      </div>
+
+     
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">Stay Updated</h6>
+        <p class="text-muted small">Subscribe to our newsletter for latest updates</p>
+        <form>
+          <div class="input-group mb-2">
+            <input type="email" class="form-control" placeholder="Your email address">
+          </div>
+          <button class="btn btn-dark w-100" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+   
+    <div class="text-right mt-4">
+      <a href="#" class="me-3 text-muted"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="me-3 text-muted"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="me-3 text-muted"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
